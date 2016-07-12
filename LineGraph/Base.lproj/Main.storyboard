@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LineGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTd-BA-dQM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrt-U5-Cr3" customClass="GraphView" customModule="LineGraph" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="371"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2009    2010    2011    2012    2013    2014    2015    2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iO-R2-YtB">
+                                                <rect key="frame" x="0.0" y="342" width="600" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="L1Y-p4-MQF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="3iO-R2-YtB" firstAttribute="bottom" secondItem="Lrt-U5-Cr3" secondAttribute="bottomMargin" id="FMv-zC-ly6"/>
+                                            <constraint firstItem="3iO-R2-YtB" firstAttribute="leading" secondItem="Lrt-U5-Cr3" secondAttribute="leading" id="Uo6-XO-4Vc"/>
+                                            <constraint firstItem="3iO-R2-YtB" firstAttribute="centerX" secondItem="Lrt-U5-Cr3" secondAttribute="centerX" id="bJS-Jy-zo3"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Distance Curve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyf-51-tR0">
+                                        <rect key="frame" x="139" y="66" width="322" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rDN-k7-xA4"/>
+                                            <constraint firstAttribute="width" constant="322" id="wMr-XS-Lzc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.85592324210000004" blue="0.088734132849999994" alpha="0.90793993790000005" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Lrt-U5-Cr3" firstAttribute="centerY" secondItem="jTd-BA-dQM" secondAttribute="centerY" id="6ao-Uf-SWH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lrt-U5-Cr3" secondAttribute="trailing" id="VmB-CW-o0a"/>
+                                    <constraint firstItem="Fyf-51-tR0" firstAttribute="centerX" secondItem="Lrt-U5-Cr3" secondAttribute="centerX" id="amm-Kw-Ht6"/>
+                                    <constraint firstItem="Lrt-U5-Cr3" firstAttribute="leading" secondItem="jTd-BA-dQM" secondAttribute="leading" id="brU-zU-THk"/>
+                                    <constraint firstItem="Lrt-U5-Cr3" firstAttribute="top" secondItem="Fyf-51-tR0" secondAttribute="bottom" constant="8" id="dfC-gD-1ly"/>
+                                    <constraint firstItem="Fyf-51-tR0" firstAttribute="top" secondItem="jTd-BA-dQM" secondAttribute="topMargin" constant="58" id="z7m-fs-TDu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jTd-BA-dQM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="8Tl-xK-Zxb"/>
+                            <constraint firstItem="jTd-BA-dQM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Lr-c8-nxg"/>
+                            <constraint firstItem="jTd-BA-dQM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cpb-h2-r96"/>
+                            <constraint firstAttribute="trailing" secondItem="jTd-BA-dQM" secondAttribute="trailing" id="gCv-In-dkP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

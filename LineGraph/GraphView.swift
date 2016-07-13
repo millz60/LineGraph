@@ -37,13 +37,13 @@ class GraphView: UIView {
         
         line.moveToPoint(CGPoint(x: 10, y: 100))
         
-        let pointsDictionary = [10:100, 60:150, 110:200, 160:250, 210:300, 260:350, 310:400, 360:450, 410:500]
+        let pointsDictionary = [10:100, 60:150, 110:200, 160:250, 210:300, 260:350, 310:400, 360:450]
         
         for (xPoint, yPoint) in pointsDictionary{
             
             line.addLineToPoint(CGPoint(x: xPoint, y: yPoint))
             UIColor.whiteColor().setFill()
-            let circle = UIBezierPath(ovalInRect: CGRect(x:xPoint, y: yPoint, width: 12, height: 12))
+            let circle = UIBezierPath(ovalInRect: CGRect(x:xPoint, y: yPoint, width: 8, height: 8))
             circle.fill()
             circle.closePath()
             
